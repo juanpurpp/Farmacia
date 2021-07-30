@@ -1,16 +1,33 @@
-<html>
-    <head>
-        <title>Login</title>
-    </head>
-    <body>
-        <header>
-			<nav>
-				<ul>
-                    <li><a href="/">Inicio</a></li>
-					<li><a href="comprar.html">Comprar Ahora</a></li>
-					<li><a href="login.html">Iniciar Sesion</a></li>
-				</ul>
-			</nav>
-		</header>
-    </body>
-</html>
+{% extends "base.html" %}
+    {% block titulo %} Comprar {% endblock %}
+    {% block contenido %}
+        <h3>Escriba su nombre</h3>
+        <input type="text" required="">
+        <p></p>
+        <table border="1px">
+            <tr>
+                <td><input type="button" value=""> Antipulgas</td>
+                <td>$2500</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="button" value=""> Paracetamol para animales</td>
+                <td>$5000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="button" value=""> Viagra</td>
+                <td>$10000</td>
+                <td></td>
+            </tr>
+        </Table>
+
+        <input type="button" value="Comprar" >
+        <table border="1px">
+            <tr>
+                <td>Total:</td>
+                <td>$0</td>
+            </tr>
+        </table>
+        
+    {% endblock %}

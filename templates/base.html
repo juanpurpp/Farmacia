@@ -1,11 +1,29 @@
 <html>
 	<head>
-		<title>{% block titulo%}{%endblock%}</title>
+		<title>{% block titulo%}{%endblock%} - Farmacia Veterinaria</title>
 		<meta charset="utf-8">
+		<link rel="icon" href="../Image/ulagoslogo.ico">
 	</head>
 	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="/">Inicio</a></li>
+					<li><a href="login.html">Iniciar Sesion</a></li>
+					<li><a href="comprar.html">Comprar Ahora</a></li>
+				</ul>
+			</nav>
+		</header>
 		{%block contenido%}
 		{%endblock%}
-		<meta charset="utf-8">
+		<p>
+            <li><a href="boleta.html">Boleta</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </p>
+		<footer>
+			<h4>
+				Copyright © 2021-2021 Farmacia ULagos S.A. Todos los derechos reservados.
+			</h4>
+		</footer>
 	</body>
 </html>

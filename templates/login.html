@@ -1,16 +1,11 @@
-<html>
-    <head>
-        <title>Comprando</title>
-    </head>
-    <body>
-        <header>
-			<nav>
-				<ul>
-                    <li><a href="/">Inicio</a></li>
-					<li><a href="comprar.html">Comprar Ahora</a></li>
-					<li><a href="login.html">Iniciar Sesion</a></li>
-				</ul>
-			</nav>
-		</header>
-    </body>
-</html>
+{% extends "base.html" %}
+    {% block titulo %} Iniciar Sesion {% endblock %}
+    {% block contenido %}
+        <img src="../Image/usuariologo.png" alt="Usuario" title= "Usuario">
+        <h4>Ingrese su nombre de Usuario</h4>
+        <input type="text" required="">
+        <h4>Ingrese su contraseña</h4>
+        <input type="password" required="">
+        <p></p>
+        <input type="button" value="Entrar">
+    {% endblock %}
